@@ -8,22 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		70392F2D1DBB6EF800D738FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70392F2C1DBB6EF800D738FD /* AppDelegate.swift */; };
-		70392F2F1DBB6EF800D738FD /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70392F2E1DBB6EF800D738FD /* FirstViewController.swift */; };
-		70392F311DBB6EF800D738FD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70392F301DBB6EF800D738FD /* SecondViewController.swift */; };
+		70392F2F1DBB6EF800D738FD /* GridFixedSizeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70392F2E1DBB6EF800D738FD /* GridFixedSizeVC.swift */; };
 		70392F341DBB6EF800D738FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70392F321DBB6EF800D738FD /* Main.storyboard */; };
 		70392F361DBB6EF800D738FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70392F351DBB6EF800D738FD /* Assets.xcassets */; };
 		70392F391DBB6EF800D738FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70392F371DBB6EF800D738FD /* LaunchScreen.storyboard */; };
+		70392F411DBB708C00D738FD /* WaterfallContentAwareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70392F401DBB708C00D738FD /* WaterfallContentAwareVC.swift */; };
+		70392F4D1DBB73FE00D738FD /* NoteCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70392F4B1DBB73FE00D738FD /* NoteCVCell.swift */; };
+		70392F501DBB742500D738FD /* NoteCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70392F4F1DBB742500D738FD /* NoteCVCell.xib */; };
+		70392F521DBB757D00D738FD /* NotesDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70392F511DBB757D00D738FD /* NotesDatasource.swift */; };
+		70392F5A1DBBF7A300D738FD /* GridDeviceAdaptedSizeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70392F591DBBF7A300D738FD /* GridDeviceAdaptedSizeVC.swift */; };
+		70392F621DBC2FDC00D738FD /* WaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70392F611DBC2FDC00D738FD /* WaterfallLayout.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		70392F291DBB6EF800D738FD /* CollectionViewLayouts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewLayouts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70392F2C1DBB6EF800D738FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		70392F2E1DBB6EF800D738FD /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		70392F301DBB6EF800D738FD /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		70392F2E1DBB6EF800D738FD /* GridFixedSizeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridFixedSizeVC.swift; sourceTree = "<group>"; };
 		70392F331DBB6EF800D738FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70392F351DBB6EF800D738FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70392F381DBB6EF800D738FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70392F3A1DBB6EF800D738FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70392F401DBB708C00D738FD /* WaterfallContentAwareVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallContentAwareVC.swift; sourceTree = "<group>"; };
+		70392F4B1DBB73FE00D738FD /* NoteCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteCVCell.swift; sourceTree = "<group>"; };
+		70392F4F1DBB742500D738FD /* NoteCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteCVCell.xib; sourceTree = "<group>"; };
+		70392F511DBB757D00D738FD /* NotesDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesDatasource.swift; sourceTree = "<group>"; };
+		70392F591DBBF7A300D738FD /* GridDeviceAdaptedSizeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridDeviceAdaptedSizeVC.swift; sourceTree = "<group>"; };
+		70392F611DBC2FDC00D738FD /* WaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallLayout.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,52 @@
 		70392F2B1DBB6EF800D738FD /* CollectionViewLayouts */ = {
 			isa = PBXGroup;
 			children = (
+				70392F451DBB72CC00D738FD /* Layouts */,
+				70392F461DBB72EB00D738FD /* Views */,
+				70392F441DBB72C000D738FD /* Datasources */,
+				70392F421DBB72A100D738FD /* Controllers */,
 				70392F2C1DBB6EF800D738FD /* AppDelegate.swift */,
-				70392F2E1DBB6EF800D738FD /* FirstViewController.swift */,
-				70392F301DBB6EF800D738FD /* SecondViewController.swift */,
 				70392F321DBB6EF800D738FD /* Main.storyboard */,
 				70392F351DBB6EF800D738FD /* Assets.xcassets */,
 				70392F371DBB6EF800D738FD /* LaunchScreen.storyboard */,
 				70392F3A1DBB6EF800D738FD /* Info.plist */,
 			);
 			path = CollectionViewLayouts;
+			sourceTree = "<group>";
+		};
+		70392F421DBB72A100D738FD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				70392F2E1DBB6EF800D738FD /* GridFixedSizeVC.swift */,
+				70392F591DBBF7A300D738FD /* GridDeviceAdaptedSizeVC.swift */,
+				70392F401DBB708C00D738FD /* WaterfallContentAwareVC.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		70392F441DBB72C000D738FD /* Datasources */ = {
+			isa = PBXGroup;
+			children = (
+				70392F511DBB757D00D738FD /* NotesDatasource.swift */,
+			);
+			name = Datasources;
+			sourceTree = "<group>";
+		};
+		70392F451DBB72CC00D738FD /* Layouts */ = {
+			isa = PBXGroup;
+			children = (
+				70392F611DBC2FDC00D738FD /* WaterfallLayout.swift */,
+			);
+			name = Layouts;
+			sourceTree = "<group>";
+		};
+		70392F461DBB72EB00D738FD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				70392F4B1DBB73FE00D738FD /* NoteCVCell.swift */,
+				70392F4F1DBB742500D738FD /* NoteCVCell.xib */,
+			);
+			name = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +175,7 @@
 			files = (
 				70392F391DBB6EF800D738FD /* LaunchScreen.storyboard in Resources */,
 				70392F361DBB6EF800D738FD /* Assets.xcassets in Resources */,
+				70392F501DBB742500D738FD /* NoteCVCell.xib in Resources */,
 				70392F341DBB6EF800D738FD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,9 +187,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70392F311DBB6EF800D738FD /* SecondViewController.swift in Sources */,
+				70392F621DBC2FDC00D738FD /* WaterfallLayout.swift in Sources */,
+				70392F521DBB757D00D738FD /* NotesDatasource.swift in Sources */,
+				70392F411DBB708C00D738FD /* WaterfallContentAwareVC.swift in Sources */,
 				70392F2D1DBB6EF800D738FD /* AppDelegate.swift in Sources */,
-				70392F2F1DBB6EF800D738FD /* FirstViewController.swift in Sources */,
+				70392F4D1DBB73FE00D738FD /* NoteCVCell.swift in Sources */,
+				70392F5A1DBBF7A300D738FD /* GridDeviceAdaptedSizeVC.swift in Sources */,
+				70392F2F1DBB6EF800D738FD /* GridFixedSizeVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

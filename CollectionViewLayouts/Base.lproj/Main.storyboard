@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--First-->
+        <!--Fixed Size-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" customClass="FirstViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" customClass="GridFixedSizeVC" customModule="CollectionViewLayouts" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -17,13 +19,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Grid Fixed Sized" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="PWu-E8-5iU">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="u2N-RW-rWx">
+                                    <size key="itemSize" width="150" height="150"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NoteCVCell" id="GPN-AK-j7q" customClass="NoteCVCell" customModule="CollectionViewLayouts" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="9pv-A4-QxB" id="ZHz-Ed-Cna"/>
+                                    <outlet property="delegate" destination="9pv-A4-QxB" id="f33-D7-FqT"/>
+                                </connections>
+                            </collectionView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A5M-7J-77L">
+                                <string key="text">All cells are of the same predetermined size with the texts being truncated where applicable. The cells are displayed in a grid flow layout.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -31,55 +57,173 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="8" symbolic="YES" id="cfb-er-3JN"/>
-                            <constraint firstItem="A5M-7J-77L" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="e1l-AV-tCB"/>
-                            <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="A5M-7J-77L" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="10" id="6jj-nO-VWy"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="A5M-7J-77L" secondAttribute="trailing" constant="10" id="EAe-fe-Vci"/>
+                            <constraint firstItem="PWu-E8-5iU" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="15" id="RjU-fN-XzS"/>
+                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="10" id="W7F-sO-xqa"/>
+                            <constraint firstItem="A5M-7J-77L" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="20" id="Wsk-8N-qIh"/>
+                            <constraint firstItem="PWu-E8-5iU" firstAttribute="top" secondItem="A5M-7J-77L" secondAttribute="bottom" constant="30" id="hCa-dl-5z4"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="PWu-E8-5iU" secondAttribute="bottom" constant="30" id="oKd-1y-GGH"/>
+                            <constraint firstAttribute="trailing" secondItem="KQZ-1w-vlD" secondAttribute="trailing" constant="10" id="q59-8F-BBd"/>
+                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leading" constant="10" id="taf-pl-70O"/>
+                            <constraint firstAttribute="trailing" secondItem="PWu-E8-5iU" secondAttribute="trailing" constant="15" id="u64-92-7b0"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="First" image="first" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="Fixed Size" image="second" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="collectionView" destination="PWu-E8-5iU" id="it9-Zm-wF4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="-320"/>
+            <point key="canvasLocation" x="705" y="-469"/>
         </scene>
-        <!--Second-->
-        <scene sceneID="wg7-f3-ORb">
+        <!--Device Adapted Size-->
+        <scene sceneID="aWe-no-Xz5">
             <objects>
-                <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="RQ2-Dh-vim" customClass="GridDeviceAdaptedSizeVC" customModule="CollectionViewLayouts" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
-                        <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
+                        <viewControllerLayoutGuide type="top" id="epf-ww-9uQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="xwR-4R-wB6"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="QS5-Rx-YEW">
+                    <view key="view" contentMode="scaleToFill" id="Zdw-AK-LDi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Grid Device Adapted Sized" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="v4R-5C-c20">
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VNt-Mr-wzN">
+                                <string key="text">All cells are of the same predetermined size but adapted to the device screen size. The texts are truncated where applicable. The cells are displayed in a grid flow layout.</string>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="1U4-wK-hoJ">
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="i5H-Yi-jWq">
+                                    <size key="itemSize" width="150" height="150"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NoteCVCell" id="Jon-rC-a6h" customClass="NoteCVCell" customModule="CollectionViewLayouts" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                            <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </view>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="RQ2-Dh-vim" id="Mvi-Q4-Slj"/>
+                                    <outlet property="delegate" destination="RQ2-Dh-vim" id="40u-ti-0kq"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
-                            <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
-                            <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
+                            <constraint firstAttribute="trailing" secondItem="1U4-wK-hoJ" secondAttribute="trailing" constant="15" id="9dc-jr-Mvl"/>
+                            <constraint firstItem="VNt-Mr-wzN" firstAttribute="top" secondItem="v4R-5C-c20" secondAttribute="bottom" constant="20" id="D3n-HS-RI2"/>
+                            <constraint firstAttribute="trailing" secondItem="VNt-Mr-wzN" secondAttribute="trailing" constant="10" id="Dz7-Ig-nR4"/>
+                            <constraint firstItem="1U4-wK-hoJ" firstAttribute="leading" secondItem="Zdw-AK-LDi" secondAttribute="leading" constant="15" id="FmS-Ki-Vk5"/>
+                            <constraint firstItem="xwR-4R-wB6" firstAttribute="top" secondItem="1U4-wK-hoJ" secondAttribute="bottom" constant="30" id="KkO-Ez-Xz9"/>
+                            <constraint firstItem="v4R-5C-c20" firstAttribute="leading" secondItem="Zdw-AK-LDi" secondAttribute="leading" constant="10" id="KkY-AI-JFG"/>
+                            <constraint firstAttribute="trailing" secondItem="v4R-5C-c20" secondAttribute="trailing" constant="10" id="UFh-v6-yvR"/>
+                            <constraint firstItem="VNt-Mr-wzN" firstAttribute="leading" secondItem="Zdw-AK-LDi" secondAttribute="leading" constant="10" id="X3k-zq-dnr"/>
+                            <constraint firstItem="v4R-5C-c20" firstAttribute="top" secondItem="epf-ww-9uQ" secondAttribute="bottom" constant="10" id="g24-Uy-NGR"/>
+                            <constraint firstItem="1U4-wK-hoJ" firstAttribute="top" secondItem="VNt-Mr-wzN" secondAttribute="bottom" constant="30" id="zPm-2w-EPm"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Second" image="second" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Device Adapted Size" image="second" id="zbC-DB-MjV"/>
+                    <connections>
+                        <outlet property="collectionView" destination="1U4-wK-hoJ" id="OFN-Cg-MoD"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ioB-4A-Fob" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="750" y="360"/>
+            <point key="canvasLocation" x="705" y="206"/>
+        </scene>
+        <!--Waterfall Content Aware-->
+        <scene sceneID="8Va-2T-Szj">
+            <objects>
+                <viewController id="2Tn-qg-eNc" customClass="WaterfallContentAwareVC" customModule="CollectionViewLayouts" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="yxO-B7-jC9"/>
+                        <viewControllerLayoutGuide type="bottom" id="sI5-cE-2uZ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1IQ-g8-q0S">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="arN-r1-Pyq">
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Waterfall Content Aware" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="hSt-dW-Qqv">
+                                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="36"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The cells are self-sizing to fit the size of the texts accordingly and the layout is in a waterfall flow" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Yrv-1S-wlk">
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="h2j-Fl-nCX">
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <collectionViewLayout key="collectionViewLayout" id="U98-60-qPg" customClass="WaterfallLayout" customModule="CollectionViewLayouts" customModuleProvider="target"/>
+                                        <cells>
+                                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="NoteCVCell" id="qXv-9i-WsU" customClass="NoteCVCell" customModule="CollectionViewLayouts" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                                    <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </view>
+                                            </collectionViewCell>
+                                        </cells>
+                                        <connections>
+                                            <outlet property="dataSource" destination="2Tn-qg-eNc" id="EY8-Dc-AeY"/>
+                                            <outlet property="delegate" destination="2Tn-qg-eNc" id="bIj-Fs-QyV"/>
+                                        </connections>
+                                    </collectionView>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="hSt-dW-Qqv" firstAttribute="leading" secondItem="arN-r1-Pyq" secondAttribute="leading" constant="10" id="0IF-iv-rhI"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="Yrv-1S-wlk" secondAttribute="trailing" constant="20" id="5nK-63-Nvi"/>
+                                    <constraint firstAttribute="trailing" secondItem="hSt-dW-Qqv" secondAttribute="trailing" constant="10" id="6M9-v9-UhO"/>
+                                    <constraint firstItem="h2j-Fl-nCX" firstAttribute="top" secondItem="Yrv-1S-wlk" secondAttribute="bottom" constant="30" id="CRX-ot-KHA"/>
+                                    <constraint firstItem="h2j-Fl-nCX" firstAttribute="leading" secondItem="arN-r1-Pyq" secondAttribute="leading" constant="15" id="Ikd-zd-3xg"/>
+                                    <constraint firstItem="hSt-dW-Qqv" firstAttribute="top" secondItem="arN-r1-Pyq" secondAttribute="top" constant="30" id="JRh-iT-rfW"/>
+                                    <constraint firstAttribute="trailing" secondItem="h2j-Fl-nCX" secondAttribute="trailing" constant="15" id="YdL-dG-TuM"/>
+                                    <constraint firstItem="Yrv-1S-wlk" firstAttribute="leading" secondItem="arN-r1-Pyq" secondAttribute="leadingMargin" constant="20" id="oUU-jT-5Yc"/>
+                                    <constraint firstItem="Yrv-1S-wlk" firstAttribute="top" secondItem="hSt-dW-Qqv" secondAttribute="bottom" constant="20" id="ux9-Ms-1xt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="arN-r1-Pyq" secondAttribute="trailing" id="296-zy-a0q"/>
+                            <constraint firstItem="sI5-cE-2uZ" firstAttribute="top" secondItem="h2j-Fl-nCX" secondAttribute="bottom" constant="30" id="3cN-Nw-ibH"/>
+                            <constraint firstItem="arN-r1-Pyq" firstAttribute="top" secondItem="1IQ-g8-q0S" secondAttribute="top" id="U4t-bL-sGX"/>
+                            <constraint firstAttribute="bottom" secondItem="arN-r1-Pyq" secondAttribute="bottom" id="uGH-Fj-1p3"/>
+                            <constraint firstItem="arN-r1-Pyq" firstAttribute="leading" secondItem="1IQ-g8-q0S" secondAttribute="leading" id="wXW-w0-vA8"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Waterfall Content Aware" image="first" id="LIB-VO-N9V"/>
+                    <connections>
+                        <outlet property="collectionView" destination="h2j-Fl-nCX" id="Y9d-Ha-Mzs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zvp-Tf-zzb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-79" y="733"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
@@ -93,12 +237,13 @@
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
-                        <segue destination="8rJ-Kc-sve" kind="relationship" relationship="viewControllers" id="lzU-1b-eKA"/>
+                        <segue destination="RQ2-Dh-vim" kind="relationship" relationship="viewControllers" id="Fd9-s0-Dxb"/>
+                        <segue destination="2Tn-qg-eNc" kind="relationship" relationship="viewControllers" id="TaF-tS-qbh"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HuB-VB-40B" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.0" y="0.0"/>
+            <point key="canvasLocation" x="-78" y="10"/>
         </scene>
     </scenes>
     <resources>
