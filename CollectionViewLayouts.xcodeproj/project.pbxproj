@@ -8,38 +8,38 @@
 
 /* Begin PBXBuildFile section */
 		70392F2D1DBB6EF800D738FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70392F2C1DBB6EF800D738FD /* AppDelegate.swift */; };
-		70392F2F1DBB6EF800D738FD /* GridFixedSizeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70392F2E1DBB6EF800D738FD /* GridFixedSizeVC.swift */; };
 		70392F341DBB6EF800D738FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70392F321DBB6EF800D738FD /* Main.storyboard */; };
 		70392F361DBB6EF800D738FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70392F351DBB6EF800D738FD /* Assets.xcassets */; };
 		70392F391DBB6EF800D738FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70392F371DBB6EF800D738FD /* LaunchScreen.storyboard */; };
-		70392F411DBB708C00D738FD /* WaterfallContentAwareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70392F401DBB708C00D738FD /* WaterfallContentAwareVC.swift */; };
-		70392F4D1DBB73FE00D738FD /* NoteCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70392F4B1DBB73FE00D738FD /* NoteCVCell.swift */; };
-		70392F501DBB742500D738FD /* NoteCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70392F4F1DBB742500D738FD /* NoteCVCell.xib */; };
-		70392F521DBB757D00D738FD /* NotesDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70392F511DBB757D00D738FD /* NotesDatasource.swift */; };
-		70392F5A1DBBF7A300D738FD /* GridDeviceAdaptedSizeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70392F591DBBF7A300D738FD /* GridDeviceAdaptedSizeVC.swift */; };
-		70392F621DBC2FDC00D738FD /* WaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70392F611DBC2FDC00D738FD /* WaterfallLayout.swift */; };
-		70392F661DBD48B700D738FD /* Waterfall-Content-Aware-SelfSizing-Cells.png in Resources */ = {isa = PBXBuildFile; fileRef = 70392F631DBD48B700D738FD /* Waterfall-Content-Aware-SelfSizing-Cells.png */; };
-		70392F671DBD48B700D738FD /* Grid-Device-Adapted-Size-Cells.png in Resources */ = {isa = PBXBuildFile; fileRef = 70392F641DBD48B700D738FD /* Grid-Device-Adapted-Size-Cells.png */; };
-		70392F681DBD48B700D738FD /* Grid-Fixed-Size-Cells.png in Resources */ = {isa = PBXBuildFile; fileRef = 70392F651DBD48B700D738FD /* Grid-Fixed-Size-Cells.png */; };
+		70392F6D1DBD49F200D738FD /* Grid-Device-Adapted-Size-Cells.png in Resources */ = {isa = PBXBuildFile; fileRef = 70392F6A1DBD49F200D738FD /* Grid-Device-Adapted-Size-Cells.png */; };
+		70392F6E1DBD49F200D738FD /* Grid-Fixed-Size-Cells.png in Resources */ = {isa = PBXBuildFile; fileRef = 70392F6B1DBD49F200D738FD /* Grid-Fixed-Size-Cells.png */; };
+		70392F6F1DBD49F200D738FD /* Waterfall-Content-Aware-SelfSizing-Cells.png in Resources */ = {isa = PBXBuildFile; fileRef = 70392F6C1DBD49F200D738FD /* Waterfall-Content-Aware-SelfSizing-Cells.png */; };
+		70392F711DBD4A0200D738FD /* WaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70392F701DBD4A0200D738FD /* WaterfallLayout.swift */; };
+		70392F751DBD4A2B00D738FD /* GridDeviceAdaptedSizeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70392F721DBD4A2B00D738FD /* GridDeviceAdaptedSizeVC.swift */; };
+		70392F761DBD4A2B00D738FD /* GridFixedSizeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70392F731DBD4A2B00D738FD /* GridFixedSizeVC.swift */; };
+		70392F771DBD4A2B00D738FD /* WaterfallContentAwareVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70392F741DBD4A2B00D738FD /* WaterfallContentAwareVC.swift */; };
+		70392F791DBD4A3500D738FD /* NotesDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70392F781DBD4A3500D738FD /* NotesDatasource.swift */; };
+		70392F7C1DBD4A4400D738FD /* NoteCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70392F7A1DBD4A4400D738FD /* NoteCVCell.swift */; };
+		70392F7D1DBD4A4400D738FD /* NoteCVCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 70392F7B1DBD4A4400D738FD /* NoteCVCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		70392F291DBB6EF800D738FD /* CollectionViewLayouts.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CollectionViewLayouts.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70392F2C1DBB6EF800D738FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		70392F2E1DBB6EF800D738FD /* GridFixedSizeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GridFixedSizeVC.swift; sourceTree = "<group>"; };
 		70392F331DBB6EF800D738FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70392F351DBB6EF800D738FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70392F381DBB6EF800D738FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70392F3A1DBB6EF800D738FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		70392F401DBB708C00D738FD /* WaterfallContentAwareVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallContentAwareVC.swift; sourceTree = "<group>"; };
-		70392F4B1DBB73FE00D738FD /* NoteCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteCVCell.swift; sourceTree = "<group>"; };
-		70392F4F1DBB742500D738FD /* NoteCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NoteCVCell.xib; sourceTree = "<group>"; };
-		70392F511DBB757D00D738FD /* NotesDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesDatasource.swift; sourceTree = "<group>"; };
-		70392F591DBBF7A300D738FD /* GridDeviceAdaptedSizeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridDeviceAdaptedSizeVC.swift; sourceTree = "<group>"; };
-		70392F611DBC2FDC00D738FD /* WaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallLayout.swift; sourceTree = "<group>"; };
-		70392F631DBD48B700D738FD /* Waterfall-Content-Aware-SelfSizing-Cells.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Waterfall-Content-Aware-SelfSizing-Cells.png"; sourceTree = "<group>"; };
-		70392F641DBD48B700D738FD /* Grid-Device-Adapted-Size-Cells.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Grid-Device-Adapted-Size-Cells.png"; sourceTree = "<group>"; };
-		70392F651DBD48B700D738FD /* Grid-Fixed-Size-Cells.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Grid-Fixed-Size-Cells.png"; sourceTree = "<group>"; };
+		70392F6A1DBD49F200D738FD /* Grid-Device-Adapted-Size-Cells.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Grid-Device-Adapted-Size-Cells.png"; path = "Screenshots/Grid-Device-Adapted-Size-Cells.png"; sourceTree = "<group>"; };
+		70392F6B1DBD49F200D738FD /* Grid-Fixed-Size-Cells.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Grid-Fixed-Size-Cells.png"; path = "Screenshots/Grid-Fixed-Size-Cells.png"; sourceTree = "<group>"; };
+		70392F6C1DBD49F200D738FD /* Waterfall-Content-Aware-SelfSizing-Cells.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Waterfall-Content-Aware-SelfSizing-Cells.png"; path = "Screenshots/Waterfall-Content-Aware-SelfSizing-Cells.png"; sourceTree = "<group>"; };
+		70392F701DBD4A0200D738FD /* WaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaterfallLayout.swift; path = Layouts/WaterfallLayout.swift; sourceTree = "<group>"; };
+		70392F721DBD4A2B00D738FD /* GridDeviceAdaptedSizeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridDeviceAdaptedSizeVC.swift; path = Controllers/GridDeviceAdaptedSizeVC.swift; sourceTree = "<group>"; };
+		70392F731DBD4A2B00D738FD /* GridFixedSizeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GridFixedSizeVC.swift; path = Controllers/GridFixedSizeVC.swift; sourceTree = "<group>"; };
+		70392F741DBD4A2B00D738FD /* WaterfallContentAwareVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = WaterfallContentAwareVC.swift; path = Controllers/WaterfallContentAwareVC.swift; sourceTree = "<group>"; };
+		70392F781DBD4A3500D738FD /* NotesDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NotesDatasource.swift; path = Datasources/NotesDatasource.swift; sourceTree = "<group>"; };
+		70392F7A1DBD4A4400D738FD /* NoteCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NoteCVCell.swift; path = Views/NoteCVCell.swift; sourceTree = "<group>"; };
+		70392F7B1DBD4A4400D738FD /* NoteCVCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = NoteCVCell.xib; path = Views/NoteCVCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,11 +72,11 @@
 		70392F2B1DBB6EF800D738FD /* CollectionViewLayouts */ = {
 			isa = PBXGroup;
 			children = (
-				70392F691DBD48BC00D738FD /* Screenshots */,
-				70392F451DBB72CC00D738FD /* Layouts */,
-				70392F461DBB72EB00D738FD /* Views */,
-				70392F441DBB72C000D738FD /* Datasources */,
 				70392F421DBB72A100D738FD /* Controllers */,
+				70392F441DBB72C000D738FD /* Datasources */,
+				70392F451DBB72CC00D738FD /* Layouts */,
+				70392F691DBD48BC00D738FD /* Screenshots */,
+				70392F461DBB72EB00D738FD /* Views */,
 				70392F2C1DBB6EF800D738FD /* AppDelegate.swift */,
 				70392F321DBB6EF800D738FD /* Main.storyboard */,
 				70392F351DBB6EF800D738FD /* Assets.xcassets */,
@@ -89,9 +89,9 @@
 		70392F421DBB72A100D738FD /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				70392F2E1DBB6EF800D738FD /* GridFixedSizeVC.swift */,
-				70392F591DBBF7A300D738FD /* GridDeviceAdaptedSizeVC.swift */,
-				70392F401DBB708C00D738FD /* WaterfallContentAwareVC.swift */,
+				70392F721DBD4A2B00D738FD /* GridDeviceAdaptedSizeVC.swift */,
+				70392F731DBD4A2B00D738FD /* GridFixedSizeVC.swift */,
+				70392F741DBD4A2B00D738FD /* WaterfallContentAwareVC.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -99,7 +99,7 @@
 		70392F441DBB72C000D738FD /* Datasources */ = {
 			isa = PBXGroup;
 			children = (
-				70392F511DBB757D00D738FD /* NotesDatasource.swift */,
+				70392F781DBD4A3500D738FD /* NotesDatasource.swift */,
 			);
 			name = Datasources;
 			sourceTree = "<group>";
@@ -107,7 +107,7 @@
 		70392F451DBB72CC00D738FD /* Layouts */ = {
 			isa = PBXGroup;
 			children = (
-				70392F611DBC2FDC00D738FD /* WaterfallLayout.swift */,
+				70392F701DBD4A0200D738FD /* WaterfallLayout.swift */,
 			);
 			name = Layouts;
 			sourceTree = "<group>";
@@ -115,8 +115,8 @@
 		70392F461DBB72EB00D738FD /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				70392F4B1DBB73FE00D738FD /* NoteCVCell.swift */,
-				70392F4F1DBB742500D738FD /* NoteCVCell.xib */,
+				70392F7A1DBD4A4400D738FD /* NoteCVCell.swift */,
+				70392F7B1DBD4A4400D738FD /* NoteCVCell.xib */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -124,9 +124,9 @@
 		70392F691DBD48BC00D738FD /* Screenshots */ = {
 			isa = PBXGroup;
 			children = (
-				70392F631DBD48B700D738FD /* Waterfall-Content-Aware-SelfSizing-Cells.png */,
-				70392F641DBD48B700D738FD /* Grid-Device-Adapted-Size-Cells.png */,
-				70392F651DBD48B700D738FD /* Grid-Fixed-Size-Cells.png */,
+				70392F6A1DBD49F200D738FD /* Grid-Device-Adapted-Size-Cells.png */,
+				70392F6B1DBD49F200D738FD /* Grid-Fixed-Size-Cells.png */,
+				70392F6C1DBD49F200D738FD /* Waterfall-Content-Aware-SelfSizing-Cells.png */,
 			);
 			name = Screenshots;
 			sourceTree = "<group>";
@@ -190,12 +190,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				70392F6E1DBD49F200D738FD /* Grid-Fixed-Size-Cells.png in Resources */,
+				70392F6D1DBD49F200D738FD /* Grid-Device-Adapted-Size-Cells.png in Resources */,
 				70392F391DBB6EF800D738FD /* LaunchScreen.storyboard in Resources */,
-				70392F681DBD48B700D738FD /* Grid-Fixed-Size-Cells.png in Resources */,
+				70392F6F1DBD49F200D738FD /* Waterfall-Content-Aware-SelfSizing-Cells.png in Resources */,
+				70392F7D1DBD4A4400D738FD /* NoteCVCell.xib in Resources */,
 				70392F361DBB6EF800D738FD /* Assets.xcassets in Resources */,
-				70392F671DBD48B700D738FD /* Grid-Device-Adapted-Size-Cells.png in Resources */,
-				70392F501DBB742500D738FD /* NoteCVCell.xib in Resources */,
-				70392F661DBD48B700D738FD /* Waterfall-Content-Aware-SelfSizing-Cells.png in Resources */,
 				70392F341DBB6EF800D738FD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -207,13 +207,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70392F621DBC2FDC00D738FD /* WaterfallLayout.swift in Sources */,
-				70392F521DBB757D00D738FD /* NotesDatasource.swift in Sources */,
-				70392F411DBB708C00D738FD /* WaterfallContentAwareVC.swift in Sources */,
+				70392F791DBD4A3500D738FD /* NotesDatasource.swift in Sources */,
+				70392F771DBD4A2B00D738FD /* WaterfallContentAwareVC.swift in Sources */,
+				70392F711DBD4A0200D738FD /* WaterfallLayout.swift in Sources */,
 				70392F2D1DBB6EF800D738FD /* AppDelegate.swift in Sources */,
-				70392F4D1DBB73FE00D738FD /* NoteCVCell.swift in Sources */,
-				70392F5A1DBBF7A300D738FD /* GridDeviceAdaptedSizeVC.swift in Sources */,
-				70392F2F1DBB6EF800D738FD /* GridFixedSizeVC.swift in Sources */,
+				70392F761DBD4A2B00D738FD /* GridFixedSizeVC.swift in Sources */,
+				70392F751DBD4A2B00D738FD /* GridDeviceAdaptedSizeVC.swift in Sources */,
+				70392F7C1DBD4A4400D738FD /* NoteCVCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
