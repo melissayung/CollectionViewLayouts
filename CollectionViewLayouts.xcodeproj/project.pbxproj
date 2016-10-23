@@ -18,6 +18,9 @@
 		70392F521DBB757D00D738FD /* NotesDatasource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70392F511DBB757D00D738FD /* NotesDatasource.swift */; };
 		70392F5A1DBBF7A300D738FD /* GridDeviceAdaptedSizeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70392F591DBBF7A300D738FD /* GridDeviceAdaptedSizeVC.swift */; };
 		70392F621DBC2FDC00D738FD /* WaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70392F611DBC2FDC00D738FD /* WaterfallLayout.swift */; };
+		70392F661DBD48B700D738FD /* Waterfall-Content-Aware-SelfSizing-Cells.png in Resources */ = {isa = PBXBuildFile; fileRef = 70392F631DBD48B700D738FD /* Waterfall-Content-Aware-SelfSizing-Cells.png */; };
+		70392F671DBD48B700D738FD /* Grid-Device-Adapted-Size-Cells.png in Resources */ = {isa = PBXBuildFile; fileRef = 70392F641DBD48B700D738FD /* Grid-Device-Adapted-Size-Cells.png */; };
+		70392F681DBD48B700D738FD /* Grid-Fixed-Size-Cells.png in Resources */ = {isa = PBXBuildFile; fileRef = 70392F651DBD48B700D738FD /* Grid-Fixed-Size-Cells.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +37,9 @@
 		70392F511DBB757D00D738FD /* NotesDatasource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotesDatasource.swift; sourceTree = "<group>"; };
 		70392F591DBBF7A300D738FD /* GridDeviceAdaptedSizeVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GridDeviceAdaptedSizeVC.swift; sourceTree = "<group>"; };
 		70392F611DBC2FDC00D738FD /* WaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WaterfallLayout.swift; sourceTree = "<group>"; };
+		70392F631DBD48B700D738FD /* Waterfall-Content-Aware-SelfSizing-Cells.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Waterfall-Content-Aware-SelfSizing-Cells.png"; sourceTree = "<group>"; };
+		70392F641DBD48B700D738FD /* Grid-Device-Adapted-Size-Cells.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Grid-Device-Adapted-Size-Cells.png"; sourceTree = "<group>"; };
+		70392F651DBD48B700D738FD /* Grid-Fixed-Size-Cells.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Grid-Fixed-Size-Cells.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +72,7 @@
 		70392F2B1DBB6EF800D738FD /* CollectionViewLayouts */ = {
 			isa = PBXGroup;
 			children = (
+				70392F691DBD48BC00D738FD /* Screenshots */,
 				70392F451DBB72CC00D738FD /* Layouts */,
 				70392F461DBB72EB00D738FD /* Views */,
 				70392F441DBB72C000D738FD /* Datasources */,
@@ -112,6 +119,16 @@
 				70392F4F1DBB742500D738FD /* NoteCVCell.xib */,
 			);
 			name = Views;
+			sourceTree = "<group>";
+		};
+		70392F691DBD48BC00D738FD /* Screenshots */ = {
+			isa = PBXGroup;
+			children = (
+				70392F631DBD48B700D738FD /* Waterfall-Content-Aware-SelfSizing-Cells.png */,
+				70392F641DBD48B700D738FD /* Grid-Device-Adapted-Size-Cells.png */,
+				70392F651DBD48B700D738FD /* Grid-Fixed-Size-Cells.png */,
+			);
+			name = Screenshots;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,8 +191,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				70392F391DBB6EF800D738FD /* LaunchScreen.storyboard in Resources */,
+				70392F681DBD48B700D738FD /* Grid-Fixed-Size-Cells.png in Resources */,
 				70392F361DBB6EF800D738FD /* Assets.xcassets in Resources */,
+				70392F671DBD48B700D738FD /* Grid-Device-Adapted-Size-Cells.png in Resources */,
 				70392F501DBB742500D738FD /* NoteCVCell.xib in Resources */,
+				70392F661DBD48B700D738FD /* Waterfall-Content-Aware-SelfSizing-Cells.png in Resources */,
 				70392F341DBB6EF800D738FD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
